@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  agentgate:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./data/agentgate.db
+      - GATEWAY_TOKEN=${GATEWAY_TOKEN:-dev-token-change-me}
+      - HOST=0.0.0.0
+      - PORT=8000
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
