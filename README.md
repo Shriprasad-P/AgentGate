@@ -1,11 +1,11 @@
-# 🛡️ AgentGate
+# AgentGate
 
 **Agent-level control plane for coding agents**
 
 Built by **Shriprasad Patil** | MCA Student, Bangalore  
-Companion project to [AgentDock / CodeForge-AI](https://github.com/shriprasad) - secure cloud runtime for coding agents
+Companion project to [CodeForge-AI](https://github.com/Shriprasad-P/CodeForge-AI) - secure cloud runtime for coding agents
 
-[![Tests](https://github.com/shriprasad/agentgate/workflows/Tests/badge.svg)](https://github.com/shriprasad/agentgate/actions)
+[![Tests](https://github.com/Shriprasad-P/AgentGate/workflows/Tests/badge.svg)](https://github.com/Shriprasad-P/AgentGate/actions)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -118,8 +118,8 @@ AgentGate is **upstream** of model calls — it controls whether a coding agent 
 ### Option 1: Docker (Recommended)
 
 ```bash
-git clone https://github.com/shriprasad/agentgate.git
-cd agentgate
+git clone https://github.com/Shriprasad-P/AgentGate.git
+cd AgentGate
 cp .env.example .env
 docker compose up --build
 ```
@@ -129,8 +129,8 @@ Open http://localhost:8000
 ### Option 2: Local venv
 
 ```bash
-git clone https://github.com/shriprasad/agentgate.git
-cd agentgate
+git clone https://github.com/Shriprasad-P/AgentGate.git
+cd AgentGate
 python3.12 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -369,12 +369,10 @@ MIT License — see [LICENSE](LICENSE) for details.
 MCA Student | Bangalore, India  
 Building secure infrastructure for AI coding agents
 
-- GitHub: [@shriprasad](https://github.com/shriprasad)
-- LinkedIn: [Shriprasad Patil](https://linkedin.com/in/shriprasad-patil)
-- Email: shriprasad.patil@example.com
+- GitHub: [Shriprasad-P](https://github.com/Shriprasad-P)
 
 **Related Projects:**
-- **AgentDock / CodeForge-AI** — Secure cloud runtime for coding agents (sandboxed containers, execution layer)
+- **[CodeForge-AI](https://github.com/Shriprasad-P/CodeForge-AI)** — Secure cloud runtime for coding agents (sandboxed containers, execution layer)
 - **AgentGate** (this repo) — Control plane for agent operations (kill switch, audit, tool allowlist)
 
 ---
