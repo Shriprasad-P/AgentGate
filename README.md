@@ -2,8 +2,10 @@
 
 **Agent-level control plane for coding agents**
 
+> **Status:** Active development | Demonstration prototype | Not production-ready
+
 Built by **Shriprasad Patil** | MCA Student, Bangalore  
-Companion project to [CodeForge-AI](https://github.com/Shriprasad-P/CodeForge-AI) - secure cloud runtime for coding agents
+Companion project to [CodeForge-AI](https://github.com/Shriprasad-P/CodeForge-AI) — secure cloud runtime for coding agents
 
 [![Tests](https://github.com/Shriprasad-P/AgentGate/workflows/Tests/badge.svg)](https://github.com/Shriprasad-P/AgentGate/actions)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
@@ -13,11 +15,11 @@ Companion project to [CodeForge-AI](https://github.com/Shriprasad-P/CodeForge-AI
 
 ## Why This Exists
 
-I'm building **CodeForge-AI** (also called **AgentDock**): a secure cloud runtime for coding agents. That handles the *execution* layer — sandboxed containers, resource limits, isolation.
+I'm building **CodeForge-AI** (also called **AgentDock**): a secure cloud runtime for coding agents. That handles the *execution* layer — sandboxed containers, resource limits, and isolation.
 
-But there's a missing operational layer: **which agents are live, which tools they may call, and how a human kills one mid-run with an audit trail.**
+But there's a missing operational layer: **which agents are currently active, which tools they're permitted to call, and how a human operator can terminate one mid-run with a complete audit trail.**
 
-Model-level OpenAI proxies are common (LiteLLM, etc.). **Agent-level control planes are not.**
+Model-level OpenAI proxies are common (LiteLLM, etc.), but **agent-level control planes are not.**
 
 AgentGate is that control plane — a small, interviewable prototype that demonstrates:
 
@@ -374,6 +376,11 @@ Building secure infrastructure for AI coding agents
 **Related Projects:**
 - **[CodeForge-AI](https://github.com/Shriprasad-P/CodeForge-AI)** — Secure cloud runtime for coding agents (sandboxed containers, execution layer)
 - **AgentGate** (this repo) — Control plane for agent operations (kill switch, audit, tool allowlist)
+
+**Further Reading:**
+- [FastAPI Documentation](https://fastapi.tiangolo.com/) — Web framework powering AgentGate's API
+- [SQLAlchemy ORM](https://www.sqlalchemy.org/) — Database layer and model design
+- [AI Governance Resources](https://www.meity.gov.in/) — MeitY guidelines referenced in design rationale
 
 ---
 
